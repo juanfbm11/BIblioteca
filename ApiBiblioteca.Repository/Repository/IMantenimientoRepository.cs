@@ -8,8 +8,14 @@ namespace ApiBiblioteca.Repository.Repository
 {
     public interface IMantenimientoRepository
     {
+        Task<IEnumerable<Mantenimiento>> GetAll();
+        Task<Mantenimiento?> GetById(int id);
         Task<Mantenimiento> Add(Mantenimiento mantenimiento);
+        Task<bool> Update(Mantenimiento mantiento);
+        Task<bool> Delete(int Id);        
         Task<IEnumerable<Mantenimiento>> GetByLibro(int libroId);
         Task<IEnumerable<Mantenimiento>> GetByTecnico(int tecnicoId);
+        
     }
 }
+

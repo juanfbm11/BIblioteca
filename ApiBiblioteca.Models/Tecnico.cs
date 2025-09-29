@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ApiBiblioteca.Models
 {
-    [Table("dbo.Tecnicos")]
+    [Table("dbo.Tecnico")]
     public class Tecnico
     {
         [Key]
@@ -15,6 +15,9 @@ namespace ApiBiblioteca.Models
         public string Especialidad { get; set; } = string.Empty;
         public string Contacto { get; set; } = string.Empty;
 
-        
+        // Relaciones
+        public List<Mantenimiento> Mantenimientos { get; set; } = new List<Mantenimiento>();
+
+
     }
 }

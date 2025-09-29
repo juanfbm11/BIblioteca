@@ -43,7 +43,7 @@ namespace ApiBiblioteca.Controllers
         }
     
 
-    // PUT api/libro/5
+    // PUT api/libro/
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody] Libro libro)
         {
@@ -57,7 +57,7 @@ namespace ApiBiblioteca.Controllers
             return NoContent();
         }
 
-        // DELETE api/libro/5
+        // DELETE api/libro/
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

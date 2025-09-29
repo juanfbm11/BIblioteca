@@ -27,6 +27,8 @@ namespace ApiBiblioteca
             builder.Services.AddTransient<ILibroQueries, LibroQueries>();
             builder.Services.AddTransient<ITecnicoRepository, TecnicoRepository>();
             builder.Services.AddTransient<ITecnicoQueries, TecnicoQueries>();
+            builder.Services.AddTransient<IMantenimientoQueries, MantenimientoQueries>();
+            builder.Services.AddTransient<IMantenimientoRepository, MantenimientoRepository>();
 
             builder.Services.AddSwaggerGen();
             

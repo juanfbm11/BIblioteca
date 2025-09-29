@@ -56,9 +56,6 @@ namespace ApiBiblioteca.Repository.Implements
             
         }
 
-        public Task DeleteById(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
